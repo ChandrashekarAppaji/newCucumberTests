@@ -17,7 +17,7 @@ public class testDefinition {
     {
       driver=new driverCreator();
       chrome= driver.createDriver("Edge");
-      chrome.get("http://www.google.com");
+     // chrome.get("http://www.google.com");
     }
 
     @Then("Enter the search")

@@ -9,7 +9,7 @@ public class testPage {
 
     WebDriver driver;
 
-    @FindBy(xpath="")
+    @FindBy(xpath="....")
     public WebElement googleSearch;
 
     public testPage(WebDriver driver)
@@ -21,5 +21,6 @@ public class testPage {
     public void clickGoogleSearch()
     {
         googleSearch.click();
+
     }
 }
