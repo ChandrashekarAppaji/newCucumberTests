@@ -1,6 +1,6 @@
 package stepDefinitions;
 
-import driver.webDriver;
+import driver.driverCreator;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.WebDriver;
@@ -8,15 +8,15 @@ import org.openqa.selenium.WebDriver;
 
 public class testDefinition {
 
-    webDriver driver;
+    driverCreator driver;
     WebDriver chrome;
 
 
     @Given("Hit Google")
     public void hit_google()
     {
-      driver=new webDriver();
-      chrome= driver.createDriver();
+      driver=new driverCreator();
+      chrome= driver.createDriver("Edge");
       chrome.get("http://www.google.com");
     }
 
