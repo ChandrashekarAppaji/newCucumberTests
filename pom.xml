@@ -50,6 +50,16 @@
             <version>RELEASE</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>com.applitools</groupId>
+            <artifactId>eyes-selenium-java5</artifactId>
+            <version>5.64.5</version>
+        </dependency>
+        <!--<dependency>
+            <groupId>com.applitools</groupId>
+            <artifactId>eyes-selenium-common</artifactId>
+            <version>3.172.0</version>
+        </dependency>-->
     </dependencies>
 
 
