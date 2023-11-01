@@ -8,7 +8,6 @@ import steps.googleSteps;
 
 public class testDefinition {
 
-    driverCreator driver;
     WebDriver browserType;
 
     //All the step objects are initialized here
@@ -17,9 +16,7 @@ public class testDefinition {
     @Given("Hit Google")
     public void hit_google()
     {
-        driver=new driverCreator();
-        browserType= driver.createDriver("Edge");
-        googlesteps.googlePageActions(browserType);
+        googlesteps.googlePageActions();
     }
 
     @Then("Enter the search")
